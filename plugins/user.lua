@@ -1,12 +1,20 @@
 return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  {
+    "glacambre/firenvim",
+    lazy = not vim.g.started_by_firenvim,
+    build = function() vim.fn["firenvim#install"](0) end,
+    config = function()
+      vim.g.firenvim_config = {
+        globalSettings = { alt = "all" },
+        localSettings = {
+          [".*"] = {
+            content = "text",
+            takeover = "never",
+          },
+        },
+      }
+    end,
+  },
 }
