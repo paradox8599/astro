@@ -1,6 +1,6 @@
-# AstroNvim User Configuration Example
+# AstroNvim User Configuration
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+A user configuration for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
 
@@ -19,4 +19,3 @@ git clone --depth 1 https://github.com/paradox8599/astro $env:LOCALAPPDATA\nvim\
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/paradox8599/astro ~/.config/nvim/lua/user
 ```
-
