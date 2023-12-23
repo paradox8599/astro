@@ -8,6 +8,11 @@ return {
   n = {
     -- second key is the lefthand side of the map
     J = { "mzJ`z", desc = "Keep cursor position when J" },
+    n = { "nzzzv", desc = "Keep search term highlight in the middle" },
+    N = { "Nzzzv", desc = "Keep search term highlight in the middle" },
+    ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
+    ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
+    ["<leader>k"] = {":b#<cr>", desc = "Last buffer"},
 
     -- navigate buffer tabs with `<tab>` and `<S-tab>`
     ["<tab>"] = {
@@ -52,5 +57,8 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
-  v = {},
+  v = {
+    ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
+    ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
+  },
 }
