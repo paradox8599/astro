@@ -11,7 +11,6 @@ A user configuration template for [AstroNvim](https://github.com/AstroNvim/Astro
 ```powershell
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
 git clone --depth 1 https://github.com/paradox8599/astro $env:LOCALAPPDATA\nvim\lua\user
-nvim
 ```
 
 
