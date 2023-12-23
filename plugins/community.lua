@@ -18,4 +18,6 @@ return {
   { import = "astrocommunity/lsp/lsp-inlayhints-nvim" },
 
   { import = "astrocommunity/bars-and-lines/vim-illuminate" },
+
+  { import = "astrocommunity/motion/flash-nvim" },
 }
