@@ -13,6 +13,7 @@ git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvi
 git clone --depth 1 https://github.com/paradox8599/astro $env:LOCALAPPDATA\nvim\lua\user
 ```
 
+#### Linux/Unix
 
 ```shell
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
