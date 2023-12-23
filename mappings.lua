@@ -7,14 +7,23 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    J = { "mzJ`z", desc = "Keep cursor position when J" },
 
     -- navigate buffer tabs with `<tab>` and `<S-tab>`
     ["<tab>"] = {
-      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      function()
+        require("astronvim.utils.buffer").nav(
+          vim.v.count > 0 and vim.v.count or 1
+        )
+      end,
       desc = "Next buffer",
     },
     ["<S-tab>"] = {
-      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      function()
+        require("astronvim.utils.buffer").nav(
+          -(vim.v.count > 0 and vim.v.count or 1)
+        )
+      end,
       desc = "Previous buffer",
     },
 
@@ -43,6 +52,5 @@ return {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
-  v = {
-  },
+  v = {},
 }
