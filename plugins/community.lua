@@ -8,6 +8,12 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+
   { import = "astrocommunity.terminal-integration.vim-tpipeline" },
   { import = "astrocommunity.terminal-integration.flatten-nvim" },
+
+  { import = "astrocommunity.lsp.garbage-day-nvim" },
+  { import = "astrocommunity.lsp.inc-rename-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
+  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
 }
