@@ -36,12 +36,15 @@ return {
     -- j = { "v:count == 0 ? 'gj' : 'j'", desc = "Auto gj", expr = true },
     -- k = { "v:count == 0 ? 'gk' : 'k'", desc = "Auto gk", expr = true },
   },
+  i = {
+    ["<C-s>"] = { "<esc>:w!<cr>", desc = "Force write" },
+  },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
   v = {
-    J = { ":m '>+1<CR>gv=gv" },
-    K = { ":m '<-2<CR>gv=gv" },
+    J = { ":m '>+1<CR>gv=gv", desc = "Move selection down" },
+    K = { ":m '<-2<CR>gv=gv", desc = "Move selection up" },
   },
 }
