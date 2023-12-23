@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity/motion/flash-nvim" },
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/marks-nvim" },
+  { import = "astrocommunity/motion/mini-ai" },
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
