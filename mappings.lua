@@ -18,9 +18,6 @@ return {
       desc = "Previous buffer",
     },
 
-    -- mappings seen under group name "Buffer"
-    -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>bD"] = {
       function()
@@ -30,6 +27,8 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
+    ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
     ["<A-F>"] = { ":Format<cr>", desc = "Format" },
 
     -- j = { "v:count == 0 ? 'gj' : 'j'", desc = "Auto gj", expr = true },
