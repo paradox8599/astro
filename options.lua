@@ -1,4 +1,3 @@
--- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
     -- set to true or false etc.
@@ -9,6 +8,8 @@ return {
     wrap = false, -- sets vim.opt.wrap
     colorcolumn = "80",
     clipboard = "", -- unset clipboard integration
+    conceallevel = 0,
+    list = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
