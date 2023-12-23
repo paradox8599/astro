@@ -27,6 +27,8 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>lF"] = { ":Sad<cr>", desc = "Find and replace (Sad)" },
+
     ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
     ["<A-F>"] = { ":Format<cr>", desc = "Format" },

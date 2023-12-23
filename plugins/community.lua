@@ -20,4 +20,7 @@ return {
   { import = "astrocommunity/bars-and-lines/vim-illuminate" },
 
   { import = "astrocommunity/motion/flash-nvim" },
+
+  { import = "astrocommunity/search/nvim-hlslens" },
+  { import = "astrocommunity/search/sad-nvim" },
 }
