@@ -6,6 +6,9 @@
 return {
   -- first key is the mode
   n = {
+    -- names
+    ["<leader><leader>"] = { name = "Harpoon marks" },
+
     -- second key is the lefthand side of the map
     J = { "mzJ`z", desc = "Keep cursor position when J" },
     n = { "nzzzv", desc = "Keep search term highlight in the middle" },
@@ -48,20 +51,6 @@ return {
     -- UI
     ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
-
-    -- Harpoon
-    ["<leader><leader>c"] = {
-      function() require("harpoon.mark").clear_all() end,
-      desc = "Clear all marks",
-    },
-    ["<leader><leader>d"] = {
-      function() require("harpoon.mark").rm_file() end,
-      desc = "Remove current file from marks",
-    },
-    ["<leader>m"] = {
-      "<cmd>Telescope harpoon marks<CR>",
-      desc = "Show marks in Telescope",
-    },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Force write" },

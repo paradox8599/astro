@@ -23,7 +23,7 @@ return {
   { import = "astrocommunity/motion/flash-nvim" },
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
-  { import = "astrocommunity/motion/harpoon" },
+  -- { import = "astrocommunity/motion/harpoon" },
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
