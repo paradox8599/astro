@@ -8,7 +8,6 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" },
-  -- { import = "astrocommunity/editing-support/telescope-undo-nvim" },
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
@@ -23,7 +22,6 @@ return {
   { import = "astrocommunity/motion/flash-nvim" },
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
-  -- { import = "astrocommunity/motion/harpoon" },
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
