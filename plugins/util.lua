@@ -46,7 +46,11 @@ return {
     event = "User AstroFile",
     opts = {},
     keys = {
-      { "<leader>j", function() require("mini.splitjoin").toggle() end },
+      {
+        "<leader>j",
+        function() require("mini.splitjoin").toggle() end,
+        desc = "Toggle split join",
+      },
     },
   },
 }
