@@ -50,7 +50,6 @@ return {
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
 
     ["<leader><leader>"] = { name = "Mappings" },
-    ["<leader><leader>e"] = { ':Hypersonic<cr>', desc = "[E]xplain regex" },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Force write" },
@@ -62,6 +61,5 @@ return {
   v = {
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
-    ["<leader><leader>e"] = { ':Hypersonic<cr>', desc = "[E]xplain regex" },
   },
 }
