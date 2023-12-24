@@ -1,7 +1,6 @@
 return {
   -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
-  -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
@@ -12,6 +11,11 @@ return {
   { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" },
   { import = "astrocommunity/editing-support/refactoring-nvim" },
   { import = "astrocommunity/editing-support/ultimate-autopair-nvim" },
+  -- keymaps: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/yanky-nvim/init.lua
+  { import = "astrocommunity/editing-support/yanky-nvim" },
+  { import = "astrocommunity/editing-support/zen-mode-nvim" },
+
+  -- { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
