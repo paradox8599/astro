@@ -16,16 +16,11 @@ return {
     end,
   },
 
-  {
-    "tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
-    event = "VeryLazy",
-  },
+  -- Detect tabstop and shiftwidth automatically
+  { "tpope/vim-sleuth", event = "VeryLazy" },
 
-  {
-    "tpope/vim-speeddating", -- <C-a/x> for date
-    event = "VeryLazy",
-    config = function() end,
-  },
+  -- <C-a/x> for date
+  { "tpope/vim-speeddating", event = "VeryLazy", config = function() end },
 
   {
     "mbbill/undotree",
@@ -51,10 +46,7 @@ return {
     event = "User AstroFile",
     opts = {},
     keys = {
-      {
-        "<leader>j",
-        function() require("mini.splitjoin").toggle() end,
-      },
+      { "<leader>j", function() require("mini.splitjoin").toggle() end },
     },
   },
 }
