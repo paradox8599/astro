@@ -15,15 +15,18 @@ return {
       }
     end,
   },
+
   {
     "tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
     event = "VeryLazy",
   },
+
   {
     "tpope/vim-speeddating", -- <C-a/x> for date
     event = "VeryLazy",
     config = function() end,
   },
+
   {
     "mbbill/undotree",
     keys = {
@@ -41,5 +44,17 @@ return {
       end
       vim.opt.undofile = true
     end,
+  },
+
+  {
+    "echasnovski/mini.splitjoin",
+    event = "User AstroFile",
+    opts = {},
+    keys = {
+      {
+        "<leader>j",
+        function() require("mini.splitjoin").toggle() end,
+      },
+    },
   },
 }
