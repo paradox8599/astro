@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity/editing-support/yanky-nvim" },
   { import = "astrocommunity/editing-support/zen-mode-nvim" },
 
-  -- { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move
+  { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move   
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
@@ -33,4 +33,6 @@ return {
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
+
+  { import = "astrocommunity/file-explorer/oil-nvim" },
 }
