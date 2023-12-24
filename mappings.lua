@@ -12,7 +12,7 @@ return {
     N = { "Nzzzv", desc = "Keep search term highlight in the middle" },
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
-    ["<leader>k"] = {":b#<cr>", desc = "Last buffer"},
+    ["<leader>k"] = { ":b#<cr>", desc = "Last buffer" },
 
     -- navigate buffer tabs with `<tab>` and `<S-tab>`
     ["<tab>"] = {
@@ -41,14 +41,27 @@ return {
       end,
       desc = "Pick to close",
     },
+
+    -- LSP
     ["<leader>lF"] = { ":Sad<cr>", desc = "Find and replace (Sad)" },
 
+    -- UI
     ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
-    ["<A-F>"] = { ":Format<cr>", desc = "Format" },
 
-    -- j = { "v:count == 0 ? 'gj' : 'j'", desc = "Auto gj", expr = true },
-    -- k = { "v:count == 0 ? 'gk' : 'k'", desc = "Auto gk", expr = true },
+    -- Harpoon
+    ["<leader><leader>c"] = {
+      function() require("harpoon.mark").clear_all() end,
+      desc = "Clear all marks",
+    },
+    ["<leader><leader>d"] = {
+      function() require("harpoon.mark").rm_file() end,
+      desc = "Remove current file from marks",
+    },
+    ["<leader>m"] = {
+      "<cmd>Telescope harpoon marks<CR>",
+      desc = "Show marks in Telescope",
+    },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Force write" },
