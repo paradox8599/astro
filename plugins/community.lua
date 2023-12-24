@@ -9,6 +9,8 @@ return {
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" },
   { import = "astrocommunity/editing-support/nvim-regexplainer" },
+  { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" },
+  -- { import = "astrocommunity/editing-support/stickybuf-nvim" },
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
