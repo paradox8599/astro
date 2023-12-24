@@ -8,7 +8,7 @@ return {
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" },
-  { import = "astrocommunity/editing-support/telescope-undo-nvim" },
+  -- { import = "astrocommunity/editing-support/telescope-undo-nvim" },
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
