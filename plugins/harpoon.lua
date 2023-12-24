@@ -3,48 +3,46 @@ return {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     requires = { { "nvim-lua/plenary.nvim" } },
-    opts = {},
-    keys = {
-      {
+    event = "VeryLazy",
+    config = function()
+      local harpoon = require "harpoon"
+      harpoon:setup {}
+      vim.keymap.set(
+        "n",
         "<leader><leader>a",
-        function() require("harpoon.mark").add_file() end,
-        desc = "Add file to marks",
-      },
-      {
+        function() harpoon:list():append() end,
+        { desc = "Add file to marks" }
+      )
+      vim.keymap.set(
+        "n",
         "<leader><leader>d",
-        function() require("harpoon.mark").rm_file() end,
-        desc = "Remove file from marks",
-      },
-      {
+        function() harpoon:list():remove() end,
+        { desc = "Remove file from narks" }
+      )
+      vim.keymap.set(
+        "n",
         "<leader><leader>c",
-        function() require("harpoon.mark").clear_all() end,
-        desc = "Clear marks",
-      },
-      {
+        function() harpoon:list():clear() end,
+        { desc = "Clear marks" }
+      )
+      vim.keymap.set(
+        "n",
         "<leader>m",
-        function() require("harpoon.ui"):toggle_quick_menu() end,
-        desc = "Toggle marks quick menu",
-      },
-      {
-        "<C-m>",
-        function()
-          vim.ui.input({ prompt = "Harpoon mark index: " }, function(input)
-            local num = tonumber(input)
-            if num then require("harpoon.ui").nav_file(num) end
-          end)
-        end,
-        desc = "Goto index of mark",
-      },
-      {
+        function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
+        { desc = "Toggle harpoon marks menu" }
+      )
+      vim.keymap.set(
+        "n",
         "<C-p>",
-        function() require("harpoon.ui").nav_prev() end,
-        desc = "Goto previous mark",
-      },
-      {
+        function() require("harpoon"):list():prev() end,
+        { desc = "Goto previous mark" }
+      )
+      vim.keymap.set(
+        "n",
         "<C-n>",
-        function() require("harpoon.ui").nav_next() end,
-        desc = "Goto next mark",
-      },
-    },
+        function() require("harpoon"):list():next() end,
+        { desc = "Goto next mark" }
+      )
+    end,
   },
 }
