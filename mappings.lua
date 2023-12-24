@@ -6,9 +6,6 @@
 return {
   -- first key is the mode
   n = {
-    -- names
-    ["<leader><leader>"] = { name = "Harpoon marks" },
-
     -- second key is the lefthand side of the map
     J = { "mzJ`z", desc = "Keep cursor position when J" },
     n = { "nzzzv", desc = "Keep search term highlight in the middle" },
@@ -51,6 +48,9 @@ return {
     -- UI
     ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },
+
+    ["<leader><leader>"] = { name = "Mappings" },
+    ["<leader><leader>e"] = { ':Hypersonic<cr>', desc = "[E]xplain regex" },
   },
   i = {
     ["<C-s>"] = { "<esc>:w!<cr>", desc = "Force write" },
@@ -62,5 +62,6 @@ return {
   v = {
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
+    ["<leader><leader>e"] = { ':Hypersonic<cr>', desc = "[E]xplain regex" },
   },
 }
