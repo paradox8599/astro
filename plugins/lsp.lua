@@ -90,4 +90,8 @@ return {
   --     return config -- return final config table
   --   end,
   -- },
+  {
+    "theRealCarneiro/hyprland-vim-syntax",
+    ft = "hypr",
+  },
 }
