@@ -77,6 +77,7 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     vim.cmd [[set iskeyword+=-]]
+    vim.on_key(function() end, vim.api.nvim_get_namespaces()["auto_hlsearch"])
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {

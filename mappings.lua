@@ -6,6 +6,7 @@
 return {
   -- first key is the mode
   n = {
+    ["<Esc>"] = { ":noh<cr>" },
     -- second key is the lefthand side of the map
     J = { "mzJ`z", desc = "Keep cursor position when J" },
     n = { "nzzzv", desc = "Keep search term highlight in the middle" },
