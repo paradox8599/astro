@@ -1,3 +1,5 @@
+local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
+local is_macos = vim.loop.os_uname().sysname == "Darwin"
 return {
   -- use mason-lspconfig to configure LSP installations
   {
@@ -91,11 +93,12 @@ return {
   -- },
   {
     "theRealCarneiro/hyprland-vim-syntax",
-    cond = function()
-      local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
-      local is_macos = vim.loop.os_uname().sysname == "Darwin"
-      return not is_windows and not is_macos
-    end,
+    cond = not is_windows and not is_macos,
     ft = "hypr",
+  },
+  {
+    "elkowar/yuck.vim",
+    cond = not is_windows and not is_macos,
+    ft = { "yuck" },
   },
 }
