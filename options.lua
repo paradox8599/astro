@@ -13,6 +13,7 @@ return {
     swapfile = false,
     backup = false,
     writebackup = false,
+    mouse = "",
   },
   g = {
     mapleader = " ",
