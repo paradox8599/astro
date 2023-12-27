@@ -42,6 +42,7 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>ub"] = { ":HexToggle<cr>", desc = "Toggle Hex Editor" },
 
     -- LSP
     ["<leader>lF"] = { ":Sad<cr>", desc = "Find and replace (Sad)" },
