@@ -1,18 +1,21 @@
 return {
   opt = {
-    -- set to true or false etc.
-    relativenumber = true, -- sets vim.opt.relativenumber
-    number = true, -- sets vim.opt.number
-    spell = false, -- sets vim.opt.spell
-    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    relativenumber = true,
+    number = true,
+    scrolloff = 12,
     colorcolumn = "80",
+    spell = false,
+    signcolumn = "yes",
+    wrap = true,
     clipboard = "", -- unset clipboard integration
     conceallevel = 0,
     list = true,
+    swapfile = false,
+    backup = false,
+    writebackup = false,
   },
   g = {
-    mapleader = " ", -- sets vim.g.mapleader
+    mapleader = " ",
     autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
     cmp_enabled = true, -- enable completion at start
     autopairs_enabled = true, -- enable autopairs at start
