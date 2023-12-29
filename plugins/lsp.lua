@@ -91,6 +91,16 @@ return {
   --   end,
   -- },
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "BufEnter",
+    opts = {
+      max_lines = 7,
+      line_numbers = true,
+      mode = 'cursor',
+      trim_scope = 'outer',
+    },
+  },
+  {
     "theRealCarneiro/hyprland-vim-syntax",
     cond = helper.is_other,
     ft = "hypr",
