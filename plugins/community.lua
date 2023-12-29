@@ -5,6 +5,8 @@ return {
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity/completion/cmp-cmdline" },
+  { import = "astrocommunity/completion/codeium-vim" },
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" },
   { import = "astrocommunity/editing-support/nvim-regexplainer" },
@@ -15,7 +17,7 @@ return {
   { import = "astrocommunity/editing-support/yanky-nvim" },
   { import = "astrocommunity/editing-support/zen-mode-nvim" },
 
-  { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move   
+  { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },

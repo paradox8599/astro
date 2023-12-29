@@ -10,7 +10,7 @@ return {
     clipboard = "", -- unset clipboard integration
     conceallevel = 0,
     list = true,
-    swapfile = false,
+    swapfile = true,
     backup = false,
     writebackup = false,
     mouse = "",
