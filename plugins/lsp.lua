@@ -57,22 +57,22 @@ return {
         })
     end,
   },
-  {
-    "saecki/crates.nvim",
-    tag = "stable",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    event = { "BufRead Cargo.toml" },
-    -- opts = {},
-    config = function()
-      -- local null_ls = require "null-ls"
-      require("crates").setup {
-        null_ls = {
-          enabled = true,
-          name = "crates.nvim",
-        },
-      }
-    end,
-  },
+  -- {
+  --   "saecki/crates.nvim",
+  --   tag = "stable",
+  --   dependencies = { "nvim-lua/plenary.nvim" },
+  --   event = { "BufRead Cargo.toml" },
+  --   -- opts = {},
+  --   config = function()
+  --     -- local null_ls = require "null-ls"
+  --     require("crates").setup {
+  --       null_ls = {
+  --         enabled = true,
+  --         name = "crates.nvim",
+  --       },
+  --     }
+  --   end,
+  -- },
   -- {
   --   "jose-elias-alvarez/null-ls.nvim",
   --   opts = function(_, config)
