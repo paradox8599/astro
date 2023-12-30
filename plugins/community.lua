@@ -64,6 +64,11 @@ return {
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
 
+  { import = "astrocommunity/programming-language-support/csv-vim" },
+  { import = "astrocommunity/programming-language-support/nvim-jqx" },
+  { import = "astrocommunity/programming-language-support/rest-nvim" },
+
+
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
 

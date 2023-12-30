@@ -60,7 +60,6 @@ return {
     config = function()
       require("catppuccin").setup {
         flavour = "mocha",
-        transparent_background = false,
         integrations = { telescope = true },
       }
       ---@diagnostic disable-next-line: missing-fields
@@ -87,7 +86,7 @@ return {
       { "f<BS>", desc = "Remove Highlight" },
       { "f<C-L>", desc = "Clear Highlight" },
       { "f<Tab>", desc = "Find Highlight (similar to Telescope grep)" },
-      -- They are derivated from the default keymaps, 
+      -- They are derivated from the default keymaps,
       -- see README.md to github repo for documentation
       { "]n", "<cmd>Hi><CR>", desc = "Next Recently Set Highlight" },
       { "[n", "<cmd>Hi<<CR>", desc = "Previous Recently Set Highlight" },
