@@ -16,10 +16,12 @@ return {
   { import = "astrocommunity/pack/json" },
   { import = "astrocommunity/pack/yaml" },
 
-  -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity/code-runner/overseer-nvim" },
+
+
   { import = "astrocommunity/completion/cmp-cmdline" },
   { import = "astrocommunity/completion/codeium-vim" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" },
   { import = "astrocommunity/editing-support/nvim-regexplainer" },

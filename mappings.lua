@@ -13,6 +13,11 @@ return {
     J = { "mzJ`z", desc = "Keep cursor position when J" },
     n = { "nzzzv", desc = "Keep search term highlight in the middle" },
     N = { "Nzzzv", desc = "Keep search term highlight in the middle" },
+
+    ["<leader>i"] = { name = "Overseer" },
+    ["<leader>ir"] = { ":OverseerRun<cr>", desc = "Run task" },
+
+
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
     ["<leader>k"] = { ":b#<cr>", desc = "Last buffer" },
