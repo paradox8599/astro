@@ -60,7 +60,7 @@ return {
     config = function()
       require("catppuccin").setup {
         flavour = "mocha",
-        transparent_background = true,
+        transparent_background = false,
         integrations = { telescope = true },
       }
       ---@diagnostic disable-next-line: missing-fields
