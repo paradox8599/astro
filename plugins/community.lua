@@ -29,7 +29,6 @@ return {
 
   { import = "astrocommunity/bars-and-lines/vim-illuminate" },
 
-  -- { import = "astrocommunity/motion/flash-nvim" },
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
 

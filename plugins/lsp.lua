@@ -96,18 +96,40 @@ return {
     opts = {
       max_lines = 7,
       line_numbers = true,
-      mode = 'cursor',
-      trim_scope = 'outer',
+      mode = "cursor",
+      trim_scope = "outer",
     },
   },
+
   {
     "theRealCarneiro/hyprland-vim-syntax",
     cond = helper.is_other,
     ft = "hypr",
   },
+
   {
     "elkowar/yuck.vim",
     cond = helper.is_other,
     ft = { "yuck" },
+  },
+
+  {
+    "cameron-wags/rainbow_csv.nvim",
+    config = true,
+    ft = {
+      "csv",
+      "tsv",
+      "csv_semicolon",
+      "csv_whitespace",
+      "csv_pipe",
+      "rfc_csv",
+      "rfc_semicolon",
+    },
+    cmd = {
+      "RainbowDelim",
+      "RainbowDelimSimple",
+      "RainbowDelimQuoted",
+      "RainbowMultiDelim",
+    },
   },
 }
