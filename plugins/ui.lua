@@ -32,7 +32,8 @@ return {
       }
 
       local hooks = require "ibl.hooks"
-      -- create the highlight groups in the highlight setup hook, so they are reset
+      -- create the highlight groups in the highlight setup hook,
+      --  so they are reset
       -- every time the colorscheme changes
       hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
         vim.api.nvim_set_hl(0, "iblRed", { fg = "#E06C75" })
@@ -67,4 +68,31 @@ return {
     end,
   },
 
+  {
+    "folke/twilight.nvim",
+    keys = { { "<leader>uW", "<cmd>Twilight<cr>", desc = "Toggle Twilight" } },
+    cmd = {
+      "Twilight",
+      "TwilightEnable",
+      "TwilightDisable",
+    },
+  },
+
+  {
+    "azabiong/vim-highlighter",
+    lazy = false, -- Not Lazy by default
+    keys = {
+      -- These are basing keymaps to guide new users
+      { "f<Enter>", desc = "Highlight" },
+      { "f<BS>", desc = "Remove Highlight" },
+      { "f<C-L>", desc = "Clear Highlight" },
+      { "f<Tab>", desc = "Find Highlight (similar to Telescope grep)" },
+      -- They are derivated from the default keymaps, 
+      -- see README.md to github repo for documentation
+      { "]n", "<cmd>Hi><CR>", desc = "Next Recently Set Highlight" },
+      { "[n", "<cmd>Hi<<CR>", desc = "Previous Recently Set Highlight" },
+      { "]h", "<cmd>Hi{<CR>", desc = "Next Nearest Highlight" },
+      { "[h", "<cmd>Hi}<CR>", desc = "Previous Nearest Highlight" },
+    },
+  },
 }

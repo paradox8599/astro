@@ -4,6 +4,18 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity/pack/rust" },
+  { import = "astrocommunity/pack/cpp" },
+  { import = "astrocommunity/pack/bash" },
+  { import = "astrocommunity/pack/python" },
+  { import = "astrocommunity/pack/tailwindcss" },
+  { import = "astrocommunity/pack/typescript" },
+  { import = "astrocommunity/pack/html-css" },
+  { import = "astrocommunity/pack/markdown" },
+  { import = "astrocommunity/pack/docker" },
+  { import = "astrocommunity/pack/toml" },
+  { import = "astrocommunity/pack/json" },
+  { import = "astrocommunity/pack/yaml" },
+
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity/completion/cmp-cmdline" },
@@ -17,18 +29,35 @@ return {
   -- keymaps: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/yanky-nvim/init.lua
   { import = "astrocommunity/editing-support/yanky-nvim" },
   { import = "astrocommunity/editing-support/zen-mode-nvim" },
-
   { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move
+
+  { import = "astrocommunity/diagnostics/lsp_lines-nvim" },
+  { import = "astrocommunity/diagnostics/trouble-nvim" },
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
 
   { import = "astrocommunity/lsp/garbage-day-nvim" },
   { import = "astrocommunity/lsp/inc-rename-nvim" },
-  { import = "astrocommunity/lsp/lsp-signature-nvim" },
   { import = "astrocommunity/lsp/lsp-inlayhints-nvim" },
+  { import = "astrocommunity/lsp/lsp-signature-nvim" },
+  { import = "astrocommunity/lsp/nvim-lsp-file-operations" },
+
+  { import = "astrocommunity/color/ccc-nvim" },
+  { import = "astrocommunity/color/headlines-nvim" },
+  { import = "astrocommunity/color/mini-hipatterns" },
+  { import = "astrocommunity/color/tint-nvim" },
+  { import = "astrocommunity/color/transparent-nvim" },
+  -- { import = "astrocommunity/color/vim-highlighter" },
+  -- { import = "astrocommunity/color/twilight-nvim" },
 
   { import = "astrocommunity/bars-and-lines/vim-illuminate" },
+  { import = "astrocommunity/bars-and-lines/smartcolumn-nvim" },
+
+  { import = "astrocommunity/git/git-blame-nvim" },
+  { import = "astrocommunity/git/diffview-nvim" },
+  { import = "astrocommunity/git/openingh-nvim" },
+  { import = "astrocommunity/git/gist-nvim" },
 
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
