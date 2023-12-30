@@ -8,6 +8,8 @@ return {
   n = {
     ["<Esc>"] = { ":noh<cr>" },
     -- second key is the lefthand side of the map
+    k = { "v:count == 0 ? 'gk' : 'k'", desc = "Auto gk", expr = true },
+    j = { "v:count == 0 ? 'gj' : 'j'", desc = "Auto gj", expr = true },
     J = { "mzJ`z", desc = "Keep cursor position when J" },
     n = { "nzzzv", desc = "Keep search term highlight in the middle" },
     N = { "Nzzzv", desc = "Keep search term highlight in the middle" },
