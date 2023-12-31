@@ -77,4 +77,13 @@ return {
     event = "User AstroFile",
     config = function() end,
   },
+
+  {
+    "nguyenvukhang/nvim-toggler",
+    event = { "User AstroFile", "InsertEnter" },
+    keys = {
+      { "<leader>i", desc = "Toggle CursorWord" },
+    },
+    opts = {},
+  },
 }
