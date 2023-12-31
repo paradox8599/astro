@@ -20,6 +20,11 @@ return {
   { import = "astrocommunity/completion/codeium-vim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
+  { import = "astrocommunity/debugging/persistent-breakpoints-nvim" },
+  -- seems not working (2):
+  -- { import = "astrocommunity/debugging/nvim-dap-repl-highlights" },
+  -- { import = "astrocommunity/debugging/telescope-dap-nvim" }, 
+
   { import = "astrocommunity/diagnostics/lsp_lines-nvim" },
   { import = "astrocommunity/diagnostics/trouble-nvim" },
 
@@ -86,6 +91,8 @@ return {
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
+
+  -- { import = "astrocommunity/test/neotest" },
 
   { import = "astrocommunity/workflow/hardtime-nvim" }, -- https://github.com/m4xshen/hardtime.nvim
 }
