@@ -49,13 +49,13 @@ return {
       desc = "Pick to close",
     },
     ["<leader>bm"] = {
-      ":MarkdownPreviewToggle<CR>",
+      ":PeekOpen<CR>",
       desc = "Toggle Markdown web preview",
     },
-    ["<leader>bM"] = {
-      ":Glow<CR>",
-      desc = "Toggle Markdown buffer preview",
-    },
+    -- ["<leader>bM"] = {
+    --   ":Glow<CR>",
+    --   desc = "Toggle Markdown buffer preview",
+    -- },
 
 
     ["<leader>ub"] = { ":HexToggle<cr>", desc = "Toggle Hex Editor" },

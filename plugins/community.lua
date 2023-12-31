@@ -46,8 +46,9 @@ return {
   { import = "astrocommunity/lsp/lsp-signature-nvim" },
   { import = "astrocommunity/lsp/nvim-lsp-file-operations" },
 
-  { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- markdown in neovim preview
-  { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
+  { import = "astrocommunity/markdown-and-latex/peek-nvim" }, -- markdown preview window
+  -- { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- narkdown in neovim previw
+  -- { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
 
   -- { import = "astrocommunity/media/drop-nvim" },
   { import = "astrocommunity/media/presence-nvim" },
@@ -78,6 +79,10 @@ return {
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
+
+  { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
+
+  { import = "astrocommunity/syntax/hlargs-nvim" },
 
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
