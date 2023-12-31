@@ -59,4 +59,10 @@ return {
     lazy = false,
     opts = {},
   },
+
+  {
+    "tpope/vim-repeat",
+    event = "User AstroFile",
+    config = function() end,
+  },
 }

@@ -2,7 +2,7 @@ return {
   opt = {
     relativenumber = true,
     number = true,
-    scrolloff = 12,
+    scrolloff = 15,
     colorcolumn = "80",
     spell = false,
     signcolumn = "yes",
@@ -14,6 +14,7 @@ return {
     backup = false,
     writebackup = false,
     mouse = "",
+    laststatus = 3,
   },
   g = {
     mapleader = " ",
@@ -25,8 +26,13 @@ return {
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
     gitblame_virtual_text_column = 80,
-    loaded_ruby_provider =  0,
+    loaded_ruby_provider = 0,
     loaded_perl_provider = 0,
+    -- tpipeline
+    tpipeline_statusline = "%!tpipeline#stl#line()",
+    tpipeline_focuslost = 0,
+    tpipeline_preservebg = 0,
+    tpipeline_restore = 1,
   },
 }
 -- If you need more control, you can use the function()...end notation

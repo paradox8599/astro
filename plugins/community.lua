@@ -68,6 +68,7 @@ return {
   { import = "astrocommunity/programming-language-support/nvim-jqx" },
   { import = "astrocommunity/programming-language-support/rest-nvim" },
 
+  { import = "astrocommunity/media/drop-nvim" },
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },

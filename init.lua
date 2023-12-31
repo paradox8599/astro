@@ -80,7 +80,6 @@ return {
   polish = function()
     vim.cmd [[set iskeyword+=-]]
     vim.on_key(function() end, vim.api.nvim_get_namespaces()["auto_hlsearch"])
-    vim.cmd [[set stl=%!tpipeline#stl#line()]]
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
