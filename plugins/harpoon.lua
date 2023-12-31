@@ -27,7 +27,7 @@ return {
       )
       vim.keymap.set(
         "n",
-        "<leader>m",
+        "<leader><leader>m",
         function() harpoon.ui:toggle_quick_menu(harpoon:list()) end,
         { desc = "[Marks] Toggle harpoon marks menu" }
       )
