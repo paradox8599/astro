@@ -31,4 +31,8 @@ return {
     optional = true,
     opts = { integrations = { diffview = true } },
   },
+  {
+    "rawnly/gist.nvim",
+    enabled = not require("user.helper").is_windows,
+  }
 }
