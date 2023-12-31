@@ -46,6 +46,9 @@ return {
   { import = "astrocommunity/lsp/lsp-signature-nvim" },
   { import = "astrocommunity/lsp/nvim-lsp-file-operations" },
 
+  { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- markdown in neovim preview
+  { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
+
   -- { import = "astrocommunity/media/drop-nvim" },
   { import = "astrocommunity/media/presence-nvim" },
 
@@ -70,6 +73,8 @@ return {
   { import = "astrocommunity/programming-language-support/rest-nvim" },
 
   { import = "astrocommunity/scrolling/nvim-scrollbar" },
+  -- { import = "astrocommunity/scrolling/satellite-nvim" }, -- scrollbar, requires neovim 0.10+
+  { import = "astrocommunity/scrolling/vim-smoothie" },
 
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },

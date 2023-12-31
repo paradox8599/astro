@@ -17,7 +17,6 @@ return {
     ["<leader>i"] = { name = "Overseer" },
     ["<leader>ir"] = { ":OverseerRun<cr>", desc = "Run task" },
 
-
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
     ["<leader>k"] = { ":b#<cr>", desc = "Last buffer" },
@@ -49,6 +48,16 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader>bm"] = {
+      ":MarkdownPreviewToggle<CR>",
+      desc = "Toggle Markdown web preview",
+    },
+    ["<leader>bM"] = {
+      ":Glow<CR>",
+      desc = "Toggle Markdown buffer preview",
+    },
+
+
     ["<leader>ub"] = { ":HexToggle<cr>", desc = "Toggle Hex Editor" },
 
     -- LSP

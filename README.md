@@ -10,12 +10,12 @@ A user configuration for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ```powershell
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim $env:LOCALAPPDATA\nvim
-git clone --depth 1 https://github.com/paradox8599/astro $env:LOCALAPPDATA\nvim\lua\user
+git clone https://github.com/paradox8599/astro $env:LOCALAPPDATA\nvim\lua\user
 ```
 
 #### Linux/Unix
 
 ```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 git clone https://github.com/paradox8599/astro ~/.config/nvim/lua/user
 ```
