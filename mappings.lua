@@ -16,6 +16,7 @@ return {
 
     ["<leader>i"] = { name = "Overseer" },
     ["<leader>ir"] = { ":OverseerRun<cr>", desc = "Run task" },
+    ["<leader>io"] = { ":OverseerOpen<cr>", desc = "Open tasks" },
 
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
