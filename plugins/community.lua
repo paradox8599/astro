@@ -87,5 +87,5 @@ return {
   { import = "astrocommunity/terminal-integration/vim-tpipeline" },
   { import = "astrocommunity/terminal-integration/flatten-nvim" },
 
-  { import = "astrocommunity/workflow/hardtime-nvim" },
+  { import = "astrocommunity/workflow/hardtime-nvim" }, -- https://github.com/m4xshen/hardtime.nvim
 }
