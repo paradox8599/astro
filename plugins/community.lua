@@ -80,7 +80,7 @@ return {
   { import = "astrocommunity/search/nvim-hlslens" },
   { import = "astrocommunity/search/sad-nvim" },
 
-  { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
+  -- { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
 
   { import = "astrocommunity/syntax/hlargs-nvim" },
 
