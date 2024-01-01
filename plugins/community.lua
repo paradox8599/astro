@@ -23,7 +23,7 @@ return {
   { import = "astrocommunity/debugging/persistent-breakpoints-nvim" },
   -- seems not working (2):
   -- { import = "astrocommunity/debugging/nvim-dap-repl-highlights" },
-  -- { import = "astrocommunity/debugging/telescope-dap-nvim" }, 
+  -- { import = "astrocommunity/debugging/telescope-dap-nvim" },
 
   { import = "astrocommunity/diagnostics/lsp_lines-nvim" },
   { import = "astrocommunity/diagnostics/trouble-nvim" },
@@ -43,7 +43,6 @@ return {
   { import = "astrocommunity/git/git-blame-nvim" },
   { import = "astrocommunity/git/diffview-nvim" },
   { import = "astrocommunity/git/openingh-nvim" },
-  { import = "astrocommunity/git/gist-nvim" },
 
   { import = "astrocommunity/lsp/garbage-day-nvim" },
   { import = "astrocommunity/lsp/inc-rename-nvim" },
