@@ -132,4 +132,10 @@ return {
       "RainbowMultiDelim",
     },
   },
+
+  {
+    "fei6409/log-highlight.nvim",
+    ft = { "log" },
+    opts = {},
+  },
 }
