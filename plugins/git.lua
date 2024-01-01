@@ -34,6 +34,7 @@ return {
 
   {
     "rawnly/gist.nvim",
+    enabled = not require("user.helper").is_windows,
     dependencies = {
       {
         "samjwill/nvim-unception",
