@@ -51,7 +51,7 @@ return {
     },
     ["<leader>bm"] = {
       ":PeekOpen<CR>",
-      desc = "Toggle Markdown web preview",
+      desc = "Toggle Markdown preview",
     },
 
     ["<leader>ub"] = { ":HexToggle<cr>", desc = "Toggle Hex Editor" },
