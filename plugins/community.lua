@@ -3,15 +3,15 @@ return {
   "AstroNvim/astrocommunity",
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-  { import = "astrocommunity/bars-and-lines/vim-illuminate" },
+  { import = "astrocommunity/bars-and-lines/vim-illuminate" }, -- highlight word under cursor
   { import = "astrocommunity/bars-and-lines/smartcolumn-nvim" },
 
-  { import = "astrocommunity/code-runner/overseer-nvim" },
+  { import = "astrocommunity/code-runner/overseer-nvim" }, -- task runner
 
-  { import = "astrocommunity/color/ccc-nvim" },
-  { import = "astrocommunity/color/headlines-nvim" },
-  { import = "astrocommunity/color/mini-hipatterns" },
-  { import = "astrocommunity/color/tint-nvim" },
+  { import = "astrocommunity/color/ccc-nvim" }, -- color picker
+  -- { import = "astrocommunity/color/headlines-nvim" }, -- hightlights for file types
+  { import = "astrocommunity/color/mini-hipatterns" }, -- highlight patterns（comments, colors
+  { import = "astrocommunity/color/tint-nvim" }, -- dim inactive window
   { import = "astrocommunity/color/transparent-nvim" },
   -- { import = "astrocommunity/color/vim-highlighter" },
   -- { import = "astrocommunity/color/twilight-nvim" },
@@ -25,20 +25,21 @@ return {
   -- { import = "astrocommunity/debugging/nvim-dap-repl-highlights" },
   -- { import = "astrocommunity/debugging/telescope-dap-nvim" },
 
-  { import = "astrocommunity/diagnostics/lsp_lines-nvim" },
-  { import = "astrocommunity/diagnostics/trouble-nvim" },
+  { import = "astrocommunity/diagnostics/lsp_lines-nvim" }, -- display virtual diagnostic lines
+  { import = "astrocommunity/diagnostics/trouble-nvim" }, -- diagnostic UI
 
-  { import = "astrocommunity/editing-support/todo-comments-nvim" },
-  { import = "astrocommunity/editing-support/nvim-regexplainer" },
-  { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" },
-  { import = "astrocommunity/editing-support/refactoring-nvim" },
-  { import = "astrocommunity/editing-support/ultimate-autopair-nvim" },
+  -- TODO: here
+  { import = "astrocommunity/editing-support/todo-comments-nvim" }, -- highlight todos
+  { import = "astrocommunity/editing-support/nvim-regexplainer" }, -- explain regex
+  { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" }, -- rainbow delimiters
+  { import = "astrocommunity/editing-support/refactoring-nvim" }, -- refactoring
+  { import = "astrocommunity/editing-support/ultimate-autopair-nvim" }, -- autopair
   -- keymaps: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/yanky-nvim/init.lua
-  { import = "astrocommunity/editing-support/yanky-nvim" },
-  { import = "astrocommunity/editing-support/zen-mode-nvim" },
-  { import = "astrocommunity/editing-support/vim-move" }, -- https://github.com/matze/vim-move
+  { import = "astrocommunity/editing-support/yanky-nvim" }, -- more yank operations
+  -- { import = "astrocommunity/editing-support/zen-mode-nvim" }, -- zen mode
+  { import = "astrocommunity/editing-support/vim-move" }, -- Alt + hjkl https://github.com/matze/vim-move
 
-  { import = "astrocommunity/file-explorer/oil-nvim" },
+  -- { import = "astrocommunity/file-explorer/oil-nvim" }, -- file explorer
 
   { import = "astrocommunity/git/git-blame-nvim" },
   { import = "astrocommunity/git/diffview-nvim" },
@@ -50,12 +51,12 @@ return {
   { import = "astrocommunity/lsp/lsp-signature-nvim" },
   { import = "astrocommunity/lsp/nvim-lsp-file-operations" },
 
-  { import = "astrocommunity/markdown-and-latex/peek-nvim" }, -- markdown preview window
+  { import = "astrocommunity/markdown-and-latex/peek-nvim" }, -- markdown preview window, requires [ deno ]
   -- { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- narkdown in neovim previw
   -- { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
 
   -- { import = "astrocommunity/media/drop-nvim" },
-  { import = "astrocommunity/media/presence-nvim" },
+  -- { import = "astrocommunity/media/presence-nvim" }, -- display discord status
 
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
@@ -74,22 +75,22 @@ return {
   { import = "astrocommunity/pack/yaml" },
 
   { import = "astrocommunity/programming-language-support/csv-vim" },
-  { import = "astrocommunity/programming-language-support/nvim-jqx" },
-  { import = "astrocommunity/programming-language-support/rest-nvim" },
+  { import = "astrocommunity/programming-language-support/nvim-jqx" }, -- json, requires [ jq ]
+  { import = "astrocommunity/programming-language-support/rest-nvim" }, -- requires [ curl ], optional: [ jq, tidy ]
 
   { import = "astrocommunity/scrolling/nvim-scrollbar" },
   -- { import = "astrocommunity/scrolling/satellite-nvim" }, -- scrollbar, requires neovim 0.10+
   { import = "astrocommunity/scrolling/vim-smoothie" },
 
-  { import = "astrocommunity/search/nvim-hlslens" },
-  { import = "astrocommunity/search/sad-nvim" },
+  { import = "astrocommunity/search/nvim-hlslens" }, -- seach reuslt index
+  { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ] 
 
   -- { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
 
-  { import = "astrocommunity/syntax/hlargs-nvim" },
+  { import = "astrocommunity/syntax/hlargs-nvim" }, -- function arguments highlight
 
-  { import = "astrocommunity/terminal-integration/vim-tpipeline" },
-  { import = "astrocommunity/terminal-integration/flatten-nvim" },
+  { import = "astrocommunity/terminal-integration/vim-tpipeline" }, -- tmux
+  { import = "astrocommunity/terminal-integration/flatten-nvim" }, -- flatten file buffer opened in terminal
 
   -- { import = "astrocommunity/test/neotest" },
 
