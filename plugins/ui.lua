@@ -79,6 +79,7 @@ return {
 
   {
     "azabiong/vim-highlighter",
+    enabled = false,
     lazy = false, -- Not Lazy by default
     keys = {
       -- These are basing keymaps to guide new users
