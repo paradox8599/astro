@@ -80,6 +80,13 @@ return {
   polish = function()
     vim.cmd [[set iskeyword+=-]]
     vim.on_key(function() end, vim.api.nvim_get_namespaces()["auto_hlsearch"])
+    -- disable diagnostic on env files
+    vim.api.nvim_create_autocmd({ "BufEnter" }, {
+      pattern = { "*.env" },
+      callback = function()
+        vim.diagnostic.disable()
+      end,
+    })
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
