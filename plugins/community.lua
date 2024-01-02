@@ -89,7 +89,7 @@ return {
 
   { import = "astrocommunity/syntax/hlargs-nvim" }, -- function arguments highlight
 
-  { import = "astrocommunity/terminal-integration/vim-tpipeline" }, -- tmux
+  -- { import = "astrocommunity/terminal-integration/vim-tpipeline" }, -- tmux
   { import = "astrocommunity/terminal-integration/flatten-nvim" }, -- flatten file buffer opened in terminal
 
   -- { import = "astrocommunity/test/neotest" },
