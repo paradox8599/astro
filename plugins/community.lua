@@ -55,7 +55,7 @@ return {
   -- { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- narkdown in neovim previw
   -- { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
 
-  -- { import = "astrocommunity/media/drop-nvim" },
+  -- { import = "astrocommunity/media/drop-nvim" }, -- particle effects (UI)
   -- { import = "astrocommunity/media/presence-nvim" }, -- display discord status
 
   { import = "astrocommunity/motion/mini-surround" },
@@ -83,7 +83,7 @@ return {
   { import = "astrocommunity/scrolling/vim-smoothie" },
 
   { import = "astrocommunity/search/nvim-hlslens" }, -- seach reuslt index
-  { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ] 
+  { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ]
 
   -- { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
 
