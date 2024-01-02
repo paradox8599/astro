@@ -19,6 +19,7 @@ return {
 
   -- Set colorscheme to use
   colorscheme = "catppuccin",
+  -- colorscheme = "darkplus",
   -- colorscheme = "ayu",
   -- colorscheme = "github_dark",
 

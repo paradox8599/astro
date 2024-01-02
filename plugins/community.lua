@@ -28,7 +28,6 @@ return {
   { import = "astrocommunity/diagnostics/lsp_lines-nvim" }, -- display virtual diagnostic lines
   { import = "astrocommunity/diagnostics/trouble-nvim" }, -- diagnostic UI
 
-  -- TODO: here
   { import = "astrocommunity/editing-support/todo-comments-nvim" }, -- highlight todos
   { import = "astrocommunity/editing-support/nvim-regexplainer" }, -- explain regex
   { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" }, -- rainbow delimiters
