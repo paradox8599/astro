@@ -1,5 +1,6 @@
 return {
   "folke/flash.nvim",
+  enabled = false,
   event = "VeryLazy",
   ---@type Flash.Config
   opts = {
@@ -123,14 +124,14 @@ return {
     },
     -- action to perform when picking a label.
     -- defaults to the jumping logic depending on the mode.
-    ---@type fun(match:Flash.Match, state:Flash.State)|nil
+--[[     ---@type fun(match:Flash.Match, state:Flash.State)|nil ]]
     action = nil,
     -- initial pattern to use when opening flash
     pattern = "",
     -- When `true`, flash will try to continue the last search
     continue = false,
     -- Set config to a function to dynamically change the config
-    config = nil, ---@type fun(opts:Flash.Config)|nil
+    config = nil, --[[ ---@type fun(opts:Flash.Config)|nil ]]
     -- You can override the default options for a specific mode.
     -- Use it with `require("flash").jump({mode = "forward"})`
     --[[     ---@type table<string, Flash.Config> ]]

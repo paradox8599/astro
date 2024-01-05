@@ -9,16 +9,12 @@ return {
   { import = "astrocommunity/code-runner/overseer-nvim" }, -- task runner
 
   { import = "astrocommunity/color/ccc-nvim" }, -- color picker
-  -- { import = "astrocommunity/color/headlines-nvim" }, -- hightlights for file types
   { import = "astrocommunity/color/mini-hipatterns" }, -- highlight patterns（comments, colors
   { import = "astrocommunity/color/tint-nvim" }, -- dim inactive window
   { import = "astrocommunity/color/transparent-nvim" },
-  -- { import = "astrocommunity/color/vim-highlighter" },
-  -- { import = "astrocommunity/color/twilight-nvim" },
 
   { import = "astrocommunity/completion/cmp-cmdline" },
   { import = "astrocommunity/completion/codeium-vim" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 
   { import = "astrocommunity/debugging/persistent-breakpoints-nvim" },
   -- seems not working (2):
@@ -30,15 +26,12 @@ return {
 
   { import = "astrocommunity/editing-support/todo-comments-nvim" }, -- highlight todos
   { import = "astrocommunity/editing-support/nvim-regexplainer" }, -- explain regex
-  { import = "astrocommunity/editing-support/rainbow-delimiters-nvim" }, -- rainbow delimiters
   { import = "astrocommunity/editing-support/refactoring-nvim" }, -- refactoring
   { import = "astrocommunity/editing-support/ultimate-autopair-nvim" }, -- autopair
   -- keymaps: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/yanky-nvim/init.lua
   { import = "astrocommunity/editing-support/yanky-nvim" }, -- more yank operations
-  -- { import = "astrocommunity/editing-support/zen-mode-nvim" }, -- zen mode
   { import = "astrocommunity/editing-support/vim-move" }, -- Alt + hjkl https://github.com/matze/vim-move
 
-  -- { import = "astrocommunity/file-explorer/oil-nvim" }, -- file explorer
 
   { import = "astrocommunity/git/git-blame-nvim" },
   { import = "astrocommunity/git/diffview-nvim" },
@@ -51,11 +44,8 @@ return {
   { import = "astrocommunity/lsp/nvim-lsp-file-operations" },
 
   { import = "astrocommunity/markdown-and-latex/peek-nvim" }, -- markdown preview window, requires [ deno ]
-  -- { import = "astrocommunity/markdown-and-latex/glow-nvim" }, -- narkdown in neovim previw
-  -- { import = "astrocommunity/markdown-and-latex/markdown-preview-nvim" }, -- markdown web preview
 
-  -- { import = "astrocommunity/media/drop-nvim" }, -- particle effects (UI)
-  -- { import = "astrocommunity/media/presence-nvim" }, -- display discord status
+  { import = "astrocommunity/media/presence-nvim" }, -- display discord status
 
   { import = "astrocommunity/motion/mini-surround" },
   { import = "astrocommunity/motion/mini-ai" },
@@ -93,5 +83,5 @@ return {
 
   -- { import = "astrocommunity/test/neotest" },
 
-  { import = "astrocommunity/workflow/hardtime-nvim" }, -- https://github.com/m4xshen/hardtime.nvim
+  -- { import = "astrocommunity/workflow/hardtime-nvim" }, -- https://github.com/m4xshen/hardtime.nvim
 }
