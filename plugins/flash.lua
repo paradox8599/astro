@@ -52,7 +52,7 @@ return {
       -- jump position
       pos = "start", ---@type "start" | "end" | "range"
       -- add pattern to search history
-      history = false,
+      history = true,
       -- add pattern to search register
       register = false,
       -- clear highlight after jump
@@ -152,7 +152,7 @@ return {
       -- options used when flash is activated through
       -- `f`, `F`, `t`, `T`, `;` and `,` motions
       char = {
-        enabled = true,
+        enabled = false,
         -- dynamic configuration for ftFT motions
         config = function(opts)
           -- autohide flash when in operator-pending mode

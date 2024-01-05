@@ -82,7 +82,11 @@ return {
     "nguyenvukhang/nvim-toggler",
     event = { "User AstroFile", "InsertEnter" },
     keys = {
-      { "<leader>i", desc = "Toggle CursorWord" },
+      {
+        "<leader>v",
+        function() require("nvim-toggler").toggle() end,
+        desc = "Toggle CursorWord",
+      },
     },
     opts = {},
   },
