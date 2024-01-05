@@ -8,10 +8,10 @@ return {
 
   { import = "astrocommunity/code-runner/overseer-nvim" }, -- task runner
 
-  { import = "astrocommunity/color/ccc-nvim" }, -- color picker
+  -- { import = "astrocommunity/color/ccc-nvim" }, -- color picker
   { import = "astrocommunity/color/mini-hipatterns" }, -- highlight patterns（comments, colors
-  { import = "astrocommunity/color/tint-nvim" }, -- dim inactive window
-  { import = "astrocommunity/color/transparent-nvim" },
+  -- { import = "astrocommunity/color/tint-nvim" }, -- dim inactive window
+  -- { import = "astrocommunity/color/transparent-nvim" },
 
   { import = "astrocommunity/completion/cmp-cmdline" },
   { import = "astrocommunity/completion/codeium-vim" },
@@ -29,8 +29,8 @@ return {
   { import = "astrocommunity/editing-support/refactoring-nvim" }, -- refactoring
   { import = "astrocommunity/editing-support/ultimate-autopair-nvim" }, -- autopair
   -- keymaps: https://github.com/AstroNvim/astrocommunity/blob/main/lua/astrocommunity/editing-support/yanky-nvim/init.lua
-  { import = "astrocommunity/editing-support/yanky-nvim" }, -- more yank operations
-  { import = "astrocommunity/editing-support/vim-move" }, -- Alt + hjkl https://github.com/matze/vim-move
+  -- { import = "astrocommunity/editing-support/yanky-nvim" }, -- more yank operations
+  -- { import = "astrocommunity/editing-support/vim-move" }, -- Alt + hjkl https://github.com/matze/vim-move
 
 
   { import = "astrocommunity/git/git-blame-nvim" },
@@ -47,8 +47,9 @@ return {
 
   { import = "astrocommunity/media/presence-nvim" }, -- display discord status
 
-  { import = "astrocommunity/motion/mini-surround" },
-  { import = "astrocommunity/motion/mini-ai" },
+
+  -- { import = "astrocommunity/motion/mini-surround" },
+  -- { import = "astrocommunity/motion/mini-ai" },
 
   { import = "astrocommunity/pack/rust" },
   { import = "astrocommunity/pack/cpp" },
@@ -73,8 +74,6 @@ return {
 
   { import = "astrocommunity/search/nvim-hlslens" }, -- seach reuslt index
   { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ]
-
-  -- { import = "astrocommunity/split-and-window/minimap-vim" }, -- requires code-minimap: https://github.com/wfxr/code-minimap
 
   { import = "astrocommunity/syntax/hlargs-nvim" }, -- function arguments highlight
 
