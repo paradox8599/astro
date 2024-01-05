@@ -45,7 +45,7 @@ return {
 
   { import = "astrocommunity/markdown-and-latex/peek-nvim" }, -- markdown preview window, requires [ deno ]
 
-  { import = "astrocommunity/media/presence-nvim" }, -- display discord status
+  -- { import = "astrocommunity/media/presence-nvim" }, -- display discord status
 
 
   -- { import = "astrocommunity/motion/mini-surround" },
@@ -73,7 +73,7 @@ return {
   { import = "astrocommunity/scrolling/vim-smoothie" },
 
   { import = "astrocommunity/search/nvim-hlslens" }, -- seach reuslt index
-  { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ]
+  -- { import = "astrocommunity/search/sad-nvim" }, -- requires [ sad, fzf, fd-find, delta (pager tool) ]
 
   { import = "astrocommunity/syntax/hlargs-nvim" }, -- function arguments highlight
 

@@ -56,9 +56,6 @@ return {
 
     ["<leader>ub"] = { ":HexToggle<cr>", desc = "Toggle Hex Editor" },
 
-    -- LSP
-    ["<leader>lF"] = { ":Sad<cr>", desc = "Find and replace (Sad)" },
-
     -- UI
     ["<leader>L"] = { ":Lazy<cr>", desc = "[L]azy" },
     ["<leader>M"] = { ":Mason<cr>", desc = "[M]ason" },

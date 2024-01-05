@@ -68,7 +68,10 @@ return {
   },
   {
     "RaafatTurki/hex.nvim",
-    lazy = false,
+    cmd = { "HexDump", "HexToggle", "HexAssemble" },
+    keys = {
+      { "<leader>bh", ":HexToggle<cr>", desc = "Toggle Hex Editor" },
+    },
     opts = {},
   },
 
@@ -108,5 +111,16 @@ return {
       require("hardtime").setup(opts)
       require("hardtime").enable()
     end,
+  },
+
+  {
+    "ray-x/sad.nvim",
+    dependencies = { "ray-x/guihua.lua", build = "cd lua/fzy && make" },
+    opts = {},
+    -- event = "User AstroFile",
+    cmd = { "Sad" },
+    keys = {
+      { "<leader>lF", ":Sad<cr>", desc = "Find and replace (Sad)" },
+    },
   },
 }

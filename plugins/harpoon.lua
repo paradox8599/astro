@@ -17,7 +17,7 @@ return {
         "n",
         "<leader><leader>d",
         function() harpoon:list():remove() end,
-        { desc = "[Marks] Remove file from narks" }
+        { desc = "[Marks] Remove file from marks" }
       )
       vim.keymap.set(
         "n",
