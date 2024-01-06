@@ -2,7 +2,7 @@ return {
   "folke/flash.nvim",
   enabled = false,
   event = "VeryLazy",
-  ---@type Flash.Config
+--[[   ---@type Flash.Config ]]
   opts = {
     -- labels = "abcdefghijklmnopqrstuvwxyz",
     -- labels = "asdfghjklqwertyuiopzxcvbnm",
@@ -13,7 +13,7 @@ return {
       forward = true,
       -- when `false`, find only matches in the given direction
       wrap = true,
-      ---@type Flash.Pattern.Mode
+--[[       ---@type Flash.Pattern.Mode ]]
       -- Each mode will take ignorecase and smartcase into account.
       -- * exact: exact match
       -- * search: regular search
