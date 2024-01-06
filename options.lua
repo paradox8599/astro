@@ -29,10 +29,10 @@ return {
     loaded_ruby_provider = 0,
     loaded_perl_provider = 0,
     -- tpipeline
-    tpipeline_statusline = "%!tpipeline#stl#line()",
-    tpipeline_focuslost = 0,
-    tpipeline_preservebg = 0,
-    tpipeline_restore = 1,
+    -- tpipeline_statusline = "%!tpipeline#stl#line()",
+    -- tpipeline_focuslost = 0,
+    -- tpipeline_preservebg = 0,
+    -- tpipeline_restore = 1,
   },
 }
 -- If you need more control, you can use the function()...end notation
