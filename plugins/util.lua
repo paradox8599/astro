@@ -98,7 +98,7 @@ return {
     "m4xshen/hardtime.nvim",
     event = "User AstroFile",
     opts = {
-      max_count = 10,
+      max_count = 100,
       disabled_keys = {
         ["<Insert>"] = { "", "i" },
         ["<Home>"] = { "", "i" },
