@@ -54,6 +54,7 @@ return {
   { import = "astrocommunity/pack/rust" },
   { import = "astrocommunity/pack/cpp" },
   { import = "astrocommunity/pack/bash" },
+  { import = "astrocommunity/pack/dart" },
   { import = "astrocommunity/pack/python" },
   { import = "astrocommunity/pack/tailwindcss" },
   { import = "astrocommunity/pack/typescript" },
