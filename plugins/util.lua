@@ -86,7 +86,7 @@ return {
     event = { "User AstroFile", "InsertEnter" },
     keys = {
       {
-        "<leader>v",
+        "<leader>I",
         function() require("nvim-toggler").toggle() end,
         desc = "Toggle CursorWord",
       },
@@ -98,7 +98,7 @@ return {
     "m4xshen/hardtime.nvim",
     event = "User AstroFile",
     opts = {
-      max_count = 100,
+      max_count = 999,
       disabled_keys = {
         ["<Insert>"] = { "", "i" },
         ["<Home>"] = { "", "i" },
