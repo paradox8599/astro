@@ -16,7 +16,8 @@ return {
   { import = "astrocommunity/completion/cmp-cmdline" },
   { import = "astrocommunity/completion/codeium-vim" },
 
-  { import = "astrocommunity/debugging/persistent-breakpoints-nvim" },
+  -- persistent-breakpoints-nvim loaded in dap.lua
+  -- { import = "astrocommunity/debugging/persistent-breakpoints-nvim" },
   -- seems not working (2):
   -- { import = "astrocommunity/debugging/nvim-dap-repl-highlights" },
   -- { import = "astrocommunity/debugging/telescope-dap-nvim" },
