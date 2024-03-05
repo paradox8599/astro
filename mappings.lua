@@ -21,6 +21,7 @@ return {
     ["<leader>p"] = { '"_dP', desc = "Paste without yank" },
     ["<leader>y"] = { '"+y', desc = "Yank to system clipboard" },
     ["<leader>k"] = { ":b#<cr>", desc = "Last buffer" },
+    ["<leader>lc"] = { ":LspRestart<cr>", desc = "Restart LSP" },
 
     -- navigate buffer tabs with `<tab>` and `<S-tab>`
     ["<tab>"] = {
